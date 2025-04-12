@@ -116,7 +116,8 @@ async def registrar_usuario(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Processar comprovante
     if update.message.photo:
         photo = update.message.photo[-1]
-        await photo.get_file().then(lambda f: f.download_to_drive("comprovante_temp.jpg"))
+        file = await photo.get_file()
+        await file.download_to_drive("comprovante_temp.jpg")
         with open("comprovante_temp.jpg", "rb") as img:
             await context.bot.send_photo(
                 chat_id=ADMIN_ID,
