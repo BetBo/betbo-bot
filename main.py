@@ -31,13 +31,16 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_chat.type != "private":
         return
     await update.message.reply_text(
-        "🤖 Bem-vindo ao Betbô, o robô que te entrega análises estatísticas sobre escanteios, cartões, gols e chutes a gol com base nos últimos jogos!\n\n"
-        "Todos os sinais enviados no grupo são estudados, filtrados e baseados em dados reais. O objetivo é aumentar as chances com múltiplas inteligentes, sem prometer milagres.\n\n"
-        "📌 Para acessar o grupo VIP com os sinais diários:\n"
-        "1️⃣ Faça um Pix de R$5 para:\n"
+        "🤖 Bem-vindo ao Betbô\n\n"
+        "Por apenas R$5 MENSAIS, você terá acesso ao nosso Grupo VIP, onde o robô envia no mínimo 3 entradas por dia — podendo ter ainda mais entradas extras, sempre com análises estatísticas reais e odds seguras entre 1.50 e 1.90.\n\n"
+        "🎯 As análises são baseadas em estatísticas atualizadas dos últimos jogos (gols, cartões, escanteios, chutes a gol e outros dados relevantes). O objetivo é alavancar com responsabilidade, sem prometer milagres — mas com consistência e estratégia!\n\n"
+        "📌 Para entrar no Grupo VIP:\n"
+        "1️⃣ Faça um Pix de R$5 (mensal) para::\n"
         "🔑 Chave Pix: betbooficial@gmail.com\n"
         "2️⃣ Envie o comprovante aqui mesmo nesta conversa.\n\n"
-        "Assim que validarmos, você receberá o link exclusivo de acesso ao grupo VIP! 🚀"
+        "Assim que validarmos, você receberá o link exclusivo de acesso ao grupo VIP! 🚀\n\n"
+        "⚠️ Valor promocional válido apenas até o dia 25/04. Depois disso, o valor de acesso mensal será reajustado!\n\n"
+        "🚀 Aproveite agora e entre para o time que aposta com inteligência!"
     )
 
 # /liberar @username ou /liberar ID
